@@ -1,0 +1,18 @@
+/* eslint-disable */
+const _CONFIG = {
+  "reCaptchaKey": "6LdYWuQZAAAAAPPXOyF4rW8hEfUkIqBxzjMFw7X_",
+  "ghostProxyUrl": "https://api.luckbox.com",
+  "ghostImageUrl": "https://luckbox.com",
+  "apiUrl": "https://api.luckbox.com",
+  "wsUrl": "https://api.luckbox.com",
+  "matchesFrontApiUrl": "https://api.luckbox.com",
+  "responsibleGamblingUrl": "https://api.luckbox.com",
+  "profileApiUrl": "https://api.luckbox.com",
+  "matomo": {
+    "url": "https://analytics.luckbox.com",
+    "siteId": "3",
+    "trackErrors": "true",
+  },
+  "zendeskApiKey": "69c97c5e-5748-424d-8b07-8159ca3182d8",
+  "gtmId": "GTM-WBFJX8G"
+};
