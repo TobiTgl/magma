@@ -66,7 +66,6 @@ export default function Matches() {
     let team = JSON.parse(localStorage.getItem('team'));
     return (
         <React.Fragment>
-            {console.log(team.name)}
             <Container maxWidth="md" className={classes.container}>
                 <Typography component="h1" variant="h2" align="center" color="textPrimary" gutterBottom>
                     Profile
@@ -77,21 +76,26 @@ export default function Matches() {
                 <Typography variant="h5" align="center" color="textSecondary" paragraph>
                     Email: test@mail.com
                 </Typography>
-                <GridList cellHeight={160} className={classes.gridList} cols={4}>
-                    <GridListTile key={team.id} cols={1}>
-                        <Link href="#">
-                            <img src={team.image_url} alt={"Image"} className={classes.logo} />
-                        </Link>
+                {
+                    team && (
+                        <GridList cellHeight={160} className={classes.gridList} cols={4}>
+                            <GridListTile key={team.id} cols={1}>
+                                <Link href="#">
+                                    <img src={team.image_url} alt={"Image"} className={classes.logo} />
+                                </Link>
 
-                        <GridListTileBar
-                            title={team.name}
-                            classes={{
-                                root: classes.titleBar,
-                                title: classes.title,
-                            }}
-                        />
-                    </GridListTile>
-                </GridList>
+                                <GridListTileBar
+                                    title={team.name}
+                                    classes={{
+                                        root: classes.titleBar,
+                                        title: classes.title,
+                                    }}
+                                />
+                            </GridListTile>
+                        </GridList>
+                    )
+                }
+
             </Container>
 
         </React.Fragment>
